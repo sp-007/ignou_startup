@@ -1,0 +1,45 @@
+<html>
+<head>
+<title> Your Parking Manager</title>
+<style>
+button{
+text-decoration:none;
+color:black;
+padding:8px;
+margin:8px;
+border:2px solid black;
+border-round:15px;
+box-shadow:5px 5px lightgrey;
+background-color:lightyellow;
+font-width:bold;
+}
+button:focus{
+box-shadow:2px 2px grey;
+padding-top:5px;
+}
+#button{
+display:block;
+}
+#status{
+display:none;}
+
+footer{
+position:absolute;
+bottom:0;
+left:0;
+}
+</style>
+</head>
+<body>
+<h1>Hi, your role is of <i>Parking business</i> </h1>
+<h4>Please Allow the parking and get paid</h4>
+<button id="button" onClick="Allowed()">Allow</button>
+<footer>.........This is a explanation model of my startup</footer>
+</body>
+<script>
+function Allowed()
+{
+alert("Payment done by customer....1/5 slots are free now");
+}
+</script>
+</html>

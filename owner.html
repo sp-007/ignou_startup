@@ -1,0 +1,52 @@
+<html>
+<head>
+<title> Your Parking Manager</title>
+<style>
+button{
+text-decoration:none;
+color:black;
+padding:8px;
+margin:8px;
+border:2px solid black;
+border-round:15px;
+box-shadow:5px 5px lightgrey;
+background-color:lightyellow;
+font-width:bold;
+}
+div{
+height:fit-content;
+width:max-content;
+display:flex;
+flex-direction:column;
+justify-content:space-around;
+align-content:center;
+}
+button:focus{
+box-shadow:2px 2px grey;
+padding-top:5px;
+}
+footer{
+position:absolute;
+bottom:0;
+left:0;
+}
+</style>
+</head>
+<body>
+<h1>Hi, your role is of <i>vehicle owner</i> </h1>
+<h4>Please click on BOOK button to book a valet to pick your vehicel and X amount will be deducted : </h4>
+<code>wallet: <i id="amount">X</i> </code>
+<div>
+<button onClick="deduct()">BOOK</button>
+<footer>.........This is a explanation model of my startup</footer>
+</div>
+</body>
+<script>
+function deduct(){
+alert("Valet is Assigned.....Reach to the pick up point.");
+document.getElementById('amount').innerHTML="0";
+document.getElementById('amount').style.color="red";
+document.getElementById('amount').style.fontWidth="bolder";
+}
+</script>
+</html>

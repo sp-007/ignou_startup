@@ -1,0 +1,56 @@
+<html>
+<head>
+<title> Your Parking Manager</title>
+<style>
+button{
+text-decoration:none;
+color:black;
+padding:8px;
+margin:8px;
+border:2px solid black;
+border-round:15px;
+box-shadow:5px 5px lightgrey;
+background-color:lightyellow;
+font-width:bold;
+}
+button:focus{
+box-shadow:2px 2px grey;
+padding-top:5px;
+}
+#button{
+display:block;
+}
+#status{
+display:none;}
+
+footer{
+position:absolute;
+bottom:0;
+left:0;
+}
+</style>
+</head>
+<body>
+<h1>Hi, your role is of <i>valet Person</i> </h1>
+<h4>Please Accept the job reach destination XYZ and update the status as you proceed and also check the boxes </h4>
+<h5>Jobs available:</h5>
+<code>1. Destination: <i>XYZ</i> </code>
+<button id="button" onClick="Accepted()">Accept</button>
+<div id="status">
+<input type="checkbox" >Arrived pick up point<br>
+<input type="checkbox" onclick="pay()">parked the vehicle
+</div>
+<footer>.........This is a explanation model of my startup</footer>
+</body>
+<script>
+function pay()
+{
+alert("Payment done by customer");
+}
+
+function Accepted(){
+document.getElementById('status').style.display="block";
+document.getElementById('button').style.display="none";
+}
+</script>
+</html>
